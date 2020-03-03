@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import "package:barcode_scan/barcode_scan.dart";
 import "package:flutter/services.dart";
+import 'package:firebase_database/firebase_database.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,13 +12,17 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String result;
-  @override
+  String result = '';
+  String contact;
   Future qscan() async {
     try {
       String qresult = await BarcodeScanner.scan();
       setState(() {
         result = qresult;
+        print(result);
+        print(result.split('\n').length);
+        print(result.split('\n')[5].split(':')[1]);
+        contact = result.split('\n')[5].split(':')[1].split(',')[0];
       });
     } on PlatformException catch (ex) {
       if (ex.code == BarcodeScanner.CameraAccessDenied) {
@@ -41,28 +46,22 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          // This is the theme of your application.
-          //
-          // Try running your application with "flutter run". You'll see the
-          // application has a blue toolbar. Then, without quitting the app, try
-          // changing the primarySwatch below to Colors.green and then invoke
-          // "hot reload" (press "r" in the console where you ran "flutter run",
-          // or simply save your changes to "hot reload" in a Flutter IDE).
-          // Notice that the counter didn't reset back to zero; the application
-          // is not restarted.
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
           appBar: AppBar(
-              // Here we take the value from the MyHomePage object that was created by
-              // the App.build method, and use it to set our appbar title.
-
               ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Text(result),
               Center(child: Text("Hey there....\nclick on payment recieved button\n only after scanning the QR CODE")),
-              RaisedButton(onPressed: (){},child: Text("Payment Recieved"),color: Colors.red,)
+              RaisedButton(onPressed: (){
+                final database = FirebaseDatabase.instance.reference();
+                database.reference().child('BrainTeasers/' + 'Omegatrix/' + contact).update({
+                  'payment' : true
+                });
+              },child: Text("Payment Recieved"),color: Colors.red,)
             ],
           ),
           
