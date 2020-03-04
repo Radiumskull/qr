@@ -13,16 +13,45 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String result = '';
-  String contact;
+  String contact = '';
+  String eventType = '';
+  String eventName = '';
+  Color colorb = Colors.red;
+
+  final database = FirebaseDatabase.instance.reference();
   Future qscan() async {
     try {
       String qresult = await BarcodeScanner.scan();
-      setState(() {
+      setState(() async {
         result = qresult;
         print(result);
         print(result.split('\n').length);
-        print(result.split('\n')[5].split(':')[1]);
-        contact = result.split('\n')[5].split(':')[1].split(',')[0];
+
+        contact = result.split(' ')[2];
+        eventType = result.split(' ')[0];
+        eventName = result.split(' ')[1];          
+        
+        String path = eventType  + '/' +   eventName + '/' + contact;
+        print(path);
+        setState(() {
+          colorb = Colors.yellow;
+        });
+          await database.reference().child(path).once().then((DataSnapshot dataSnapshot)  {
+              setState(() {
+                received = dataSnapshot.value.toString();
+              });
+
+          if(dataSnapshot.value == null){
+            received = 'Not Registered';
+          }
+          else{
+            received = dataSnapshot.value.toString();
+          }
+          setState(() {
+            colorb = Colors.red;
+          });
+        });  
+        
       });
     } on PlatformException catch (ex) {
       if (ex.code == BarcodeScanner.CameraAccessDenied) {
@@ -41,10 +70,11 @@ class _MyAppState extends State<MyApp> {
         });
     }
   }
-
+  String received = '';
   Widget build(BuildContext context) {
+    
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'TechStorm2020 QR',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -54,18 +84,50 @@ class _MyAppState extends State<MyApp> {
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(result),
+              Text(received),
               Center(child: Text("Hey there....\nclick on payment recieved button\n only after scanning the QR CODE")),
-              RaisedButton(onPressed: (){
-                final database = FirebaseDatabase.instance.reference();
-                database.reference().child('BrainTeasers/' + 'Omegatrix/' + contact).update({
-                  'payment' : true
+              RaisedButton(
+                color : colorb,
+                onPressed: (){
+
+                 String path = eventType  + '/' +   eventName + '/' + contact;
+                setState(() {
+                  print(path);
+                    setState(() {
+                      colorb = Colors.yellow;
+                    });
+                  database.reference().child(path).once().then((DataSnapshot dataSnapshot) async {
+                  if(dataSnapshot.value == null){
+                    received = 'Not Registered';
+
+                  }
+                  else{
+                                        setState(() {
+                      colorb = Colors.yellow;
+                    });
+ 
+                      await database.reference().child(eventType  + '/' +   eventName + '/' + contact).update({
+                        'payment' : 'true'
+                      });
+                  await database.reference().child(path).once().then((DataSnapshot dataSnapshot) async {
+                    
+                    setState(() {
+                      colorb = Colors.red;
+                      received = dataSnapshot.value.toString();
+
+                    });
+                  });
+
+            
+                  }
+                  print(received);
+                });  
                 });
-              },child: Text("Payment Recieved"),color: Colors.red,)
+
+
+              },child: Text("Payment Recieved"),)
             ],
           ),
-          
-
           floatingActionButton: FloatingActionButton.extended(
             onPressed: qscan,
             label: Text("scan"),

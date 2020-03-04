@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\25c09a54f56fc2cc31f6765f38bbb3c1\\appcompat-1.0.2\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\25c09a54f56fc2cc31f6765f38bbb3c1\\appcompat-1.0.2\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\25c09a54f56fc2cc31f6765f38bbb3c1\\appcompat-1.0.2\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\31838b00cdce5409c29df1d4e316bb7d\\core-1.0.1\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\abc_list_divider_material.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\25c09a54f56fc2cc31f6765f38bbb3c1\\appcompat-1.0.2\\res\\drawable-v21\\abc_list_divider_material.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\25c09a54f56fc2cc31f6765f38bbb3c1\\appcompat-1.0.2\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\drawable-v21\\avd_show_password.xml"
+    }
+]

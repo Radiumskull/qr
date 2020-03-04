@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_show_motion_spec.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\mtrl_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\mtrl_btn_state_list_anim.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\mtrl_btn_state_list_anim.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\design_fab_hide_motion_spec.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_hide_motion_spec.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\design_fab_show_motion_spec.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\mtrl_btn_unelevated_state_list_anim.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\mtrl_btn_unelevated_state_list_anim.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\mtrl_chip_state_list_anim.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\mtrl_chip_state_list_anim.xml"
+    },
+    {
+        "merged": "D:\\FlutterProjects\\QR_Verify\\build\\barcode_scan\\intermediates\\res\\merged\\release\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml",
+        "source": "C:\\Users\\whois\\.gradle\\caches\\transforms-2\\files-2.1\\5b8189b26ae1b4d34292ca3a7096c0e3\\material-1.0.0\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
+    }
+]
